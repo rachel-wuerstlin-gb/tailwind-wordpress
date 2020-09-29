@@ -1,0 +1,16 @@
+
+--- Outline steps needed to manually get my local changes to fresh WP install on AWS ---
+
+(set up 2nd instance of WP locally)
+
+Instructions should include:
+- file by file, folder structure
+- does the order matter?
+- Do we have to restart a server or mysql, etc.
+
+
+- Copy to staging folder first (in new production environment)
+- Then copy to production (OR, use a symbolic link)
+- 
+
+
