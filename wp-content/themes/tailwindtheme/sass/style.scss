@@ -32,9 +32,15 @@ a{
 #masthead{
     @apply .py-4 .px-2 .bg-white .shadow .mb-8 .flex .justify-between .items-center;
 
-    .site-branding h1{
-        @apply .font-bold .mb-2;
-    }
+    .site-branding{} 
+    
+        h1{
+            @apply .font-bold .mb-2;
+        }
+
+    img.custom-logo{
+        max-width: 200px;
+    }   
 }
 
 .menu {

@@ -660,9 +660,13 @@ a:hover {
   align-items: center;
 }
 
-#masthead .site-branding h1 {
+#masthead h1 {
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+#masthead img.custom-logo {
+  max-width: 200px;
 }
 
 .menu ul {
