@@ -15,29 +15,37 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @tailwind base;
 
+/*Custom Variables*/
+$gb-gray-500: #666;
+$gb-blue: #009CDE;
+
+
 @tailwind components;
 
 /*Custom Components*/
 
 a{
-    @apply .text-orange-600 .no-underline
-    
-    & :hover {
-    @apply .text-orange-800
-    }
-}
-
-.rachel{
-    @apply .text-blue-600
+    color: $gb-gray-500;
+    &:hover { color: $gb-blue }
 }
 
 #masthead{
-    @apply .py-4 .px-2 .bg-yellow-100 .shadow .mb-8 .flex .justify-between .items-center .border-t-4 .border-yellow-500
+    @apply .py-4 .px-2 .bg-white .shadow .mb-8 .flex .justify-between .items-center;
+
+    .site-branding h1{
+        @apply .font-bold .mb-2;
+    }
 }
 
-#masthead .site-branding h1{
-    @apply .font-bold .mb-2
+.menu {
+    ul {
+        @apply .flex;
+        li {
+            @apply .ml-8;
+        }
+    }
 }
+
 
 @tailwind utilities;
 

@@ -605,6 +605,8 @@ video {
   height: auto;
 }
 
+/*Custom Variables*/
+
 .container {
   width: 100%;
 }
@@ -635,20 +637,12 @@ video {
 
 /*Custom Components*/
 
-@apply .text-orange-600 .no-underline
-    
-    & :hover {
-  a {
-    --text-opacity: 1;
-    color: #9c4221;
-    color: rgba(156, 66, 33, var(--text-opacity));
-  }
+a {
+  color: #666;
 }
 
-.rachel {
-  --text-opacity: 1;
-  color: #3182ce;
-  color: rgba(49, 130, 206, var(--text-opacity));
+a:hover {
+  color: #009CDE;
 }
 
 #masthead {
@@ -657,22 +651,26 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   --bg-opacity: 1;
-  background-color: #fffff0;
-  background-color: rgba(255, 255, 240, var(--bg-opacity));
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top-width: 4px;
-  --border-opacity: 1;
-  border-color: #ecc94b;
-  border-color: rgba(236, 201, 75, var(--border-opacity));
 }
 
 #masthead .site-branding h1 {
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 2rem;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
