@@ -29,16 +29,15 @@
 	<header id="masthead">
 		
 		<div class="site-branding">
-			<?php
-			the_custom_logo();?>
-				<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php the_custom_logo();?>
+				<!-- <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1> -->
 				
-			<?php
+			<!-- <?php
 			$tailwindtheme_description = get_bloginfo( 'description', 'display' );
 			if ( $tailwindtheme_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $tailwindtheme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			<?php endif; ?> -->
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
