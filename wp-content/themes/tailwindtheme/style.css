@@ -658,14 +658,19 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
-#masthead h1 {
+#masthead div.site-branding {
+  height: 70px;
+}
+
+#masthead .site-branding h1 {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-#masthead img.custom-logo {
+#masthead .site-branding img.custom-logo {
   max-width: 200px;
 }
 

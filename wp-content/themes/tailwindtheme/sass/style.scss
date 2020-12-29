@@ -29,17 +29,21 @@ a{
     &:hover { color: $gb-blue }
 }
 
-#masthead{
-    @apply .py-4 .px-2 .bg-white .shadow .mb-8 .flex .justify-between .items-center;
 
-    .site-branding{} 
-    
+#masthead{
+
+    @apply .py-4 .px-2 .bg-white .shadow .mb-8 .flex .justify-between .items-center;
+    padding: 10px 0;
+
+    div.site-branding{
+        height: 70px;
+    }
+    .site-branding{ 
         h1{
             @apply .font-bold .mb-2;
         }
-
-    img.custom-logo{
-        max-width: 200px;
+    img.custom-logo{ 
+        max-width: 200px;}
     }   
 }
 
